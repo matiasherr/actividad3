@@ -1,26 +1,29 @@
-# Actividad 2 DFS 2020 - Entre Ríos
+# Actividad 3 DFS 2020 - Entre Ríos
 
-_Actividad Nº 2 Desarrollador FullStack ISCP_
+_Actividad Nº 3 Desarrollador FullStack ISCP_
 
-## Actividad para trabajar Bootstrap 4
+## Actividad uso de Javascript
 
-_Utilizando bootstrap, configura el sitio web creado en la actividad anterior, a fin de que sea web responsive. El mismo además, deberá contener:
-una barra de navegación que permita movernos por las páginas web del sitio,
-un formulario de contacto (el mismo deberá incluir validaciones obligando que el usuario ingrese los datos obligatorios: apellido y nombre, mail y mensaje) y, verificar que el mail tenga el formato correcto.:_
+_A fin de interactuar con el usuario y, utilizando javascript, agrega en tu sitio web una adivinanza (relacionada al tema del sitio) con hasta 4 intentos._
 
 
-Se valorará
-* inclusión de todos los items mencionados en la consigna
+El apartado de adivinanza, deberá: 
+* contener un cuadro texto y un botón
+* facilitar al usuario 2 pistas si el usuario no acierta en el intento 2 y 3. 
+* informar en todo momento al usuario el nro intentos que le quedan. 
+* informar el resultado final (si acierta o si perdió los 4 intentos).
 
+(opcional) usar los componentes de Alertas de Bootstrap 4 para informar al usuario.
+
+Se valorará: 
+* inclusión de todos los ítems mencionados en la consigna
 * aplicación de los contenidos teóricos desarrollados
-
 * creatividad en la implementación de la actividad 
-
 * funcionalidad del sitio web responsive solicitado
-
 * coherencia
-
 * prolijidad
+
+
 
 ## Autor ✒️
 
