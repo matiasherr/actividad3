@@ -67,7 +67,7 @@
           <form name="completar" action="#">
           <label>Por favor ingresá tu nombre:</label>
           <input type="text" id="name" placeholder="Nombre">
-          <button id="saludo" name="saludo" value="saludo">Enviar</button>
+          <button id="saludos" name="saludos" onclick="escribe()">Enviar</button>
         </form>
     </div>
       <div id="answer" class="vs0">
@@ -75,11 +75,14 @@
         Tienes 4 intentos para responder:
         </div>
         <h4>¿Cuál es el Pokémon con mas evoluciones?</h4>
-        <form name="preg1" action="#">
-          <label>Ingresa el nombre:</label>
-          <input type="text" id="pkname" placeholder="Pokémon">
-          <button id="pknamer" name="pknamer" value="pknamer" onclick="adivina()">Enviar</button>
-        </form>
+        <div id="preg1">
+          <form name="adiv" action="#">
+            <label>Ingresa el nombre:</label>
+            <input type="text" id="pkname" placeholder="Pokémon">
+            <button id="pknamer" name="pknamer" onclick="adivina()">Enviar</button>
+          </form>
+        </div>
+      </div>
         <div id="fail" class="alert alert-danger vs0" role="alert">
           <p class="falla">
             Has cometido un error.
@@ -88,7 +91,7 @@
             ¿Estás seguro que es el Pokémon correcto? ¿Su nombre está bien escrito?
           </p>
         </div>
-      </div>
+      
 </div>
     <!--Final Contenido-->
   </div>
