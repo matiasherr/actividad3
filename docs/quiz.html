@@ -13,20 +13,17 @@
   <!--Fin Bootstrap Remoto-->
   <!--Bootstrap en local -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <!--Bootstrap en local -->
+  <script src="js/app.js"></script>
   <link rel="stylesheet" href="css/estilos.css" />
-  <title>Pokemon's FanPage</title>
+  <title>Preguntas sobre Pokémon</title>
 </head>
 
 <body>
   <!--Cabecera cambia dependiendo de la sección-->
   <header class="container-fluid">
     <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
-    <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
-    </p>
+    <p>Ponemos a prueba tus conocimientos sobre Pokémon</p>
   </header>
   <!--Fin Cabecera Cabecera-->
   <div class="container">
@@ -62,44 +59,44 @@
     <!--Barra Navegación Fin-->
     <!--Inicio Contenido-->
     <div id="principal">
-      <div class="row">
-        <div class="col-6">
-          <div class="bloque rounded">
-            <h3><a href="pkmsaga.html">Saga Pokémon</a></h3>
-            <img src="img/cart.jpg" height="100" alt="" class="img rounded">
-            <p class="bloquep">Info sobre los diferentes juegos y consolas</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="bloque rounded">
-            <h3><a href="pkmserie.html">Pokémon: El Animé</a></h3>
-            <img src="img/ashpika.jpg" width="100" alt="" class="img rounded">
-            <p class="bloquep">Listado de Las Series animadas de Pokémon</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="bloque rounded">
-            <h3><a href="pkmgo.html">Pokémon Go</a></h3>
-            <img src="img/th_gyarados.png" height="100" alt="" class="img rounded">
-            <p class="bloquep">Apartado sobre el juego de Realidad Virtual</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="bloque rounded">
-            <h3><a href="pkmctc.html">Contactanos</a></h3>
-            <img src="img/estamp.jpg" height="100" alt="" class="img rounded">
-            <p class="bloquep">Si vés algún error o tienes info para brindarnos</p>
-          </div>
-        </div>
-      </div>
+      <br />
+
+
+    <div id="saludo">
+      <h3>Bienvenido a este pequeño exámen sobre cuanto conoces algunos Pokémon</h3>
+          <form name="completar" action="#">
+          <label>Por favor ingresá tu nombre:</label>
+          <input type="text" id="name" placeholder="Nombre">
+          <button id="saludos" name="saludos" onclick="escribe()">Enviar</button>
+        </form>
     </div>
+      <div id="answer" class="vs0">
+        <div id="intent" class="alert alert-warning" role="alert">
+        Tienes 4 intentos para responder:
+        </div>
+        <h4>¿Cuál es el Pokémon con mas evoluciones?</h4>
+        <div id="preg1">
+          <form name="adiv" action="#">
+            <label>Ingresa el nombre:</label>
+            <input type="text" id="pkname" placeholder="Pokémon">
+            <button id="pknamer" name="pknamer" onclick="adivina()">Enviar</button>
+          </form>
+        </div>
+      </div>
+        <div id="fail" class="alert alert-danger vs0" role="alert">
+          <p class="falla">
+            Has cometido un error.
+          </p>
+          <p>
+            ¿Estás seguro que es el Pokémon correcto? ¿Su nombre está bien escrito?
+          </p>
+        </div>
+      
+</div>
     <!--Final Contenido-->
   </div>
-  <footer class="container-fluid  fixed-bottom">
+  <footer class="container-fluid fixed-bottom">
     <div class="row">
-
       <div class="col-4">
         Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
       </div>
@@ -111,6 +108,11 @@
       </div>
     </div>
   </footer>
+  <!--Bootstrap scripts en local -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Bootstrap scripts en local -->
 </body>
 
 </html>
